@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+main {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.grupo {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input.valido {
+  border-color: #28a745;
+}
+
+input.invalido {
+  border-color: #dc3545;
+}
+
+.mensaje-error {
+  color: #dc3545;
+  font-size: 0.85rem;
+  display: none;
+  margin-top: 0.2rem;
+}
+
+.mensaje-exito {
+  color: #28a745;
+  font-size: 0.85rem;
+  display: none;
+  margin-top: 0.2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  background-color: #007bff;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+#btnReiniciar {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.dato-resumen {
+  margin-bottom: 0.5rem;
+}
+
+.etiqueta-resumen {
+  font-weight: bold;
+}
+
+.progreso {
+  /* Ya definido inline en HTML */
+}
