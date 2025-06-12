@@ -1,49 +1,46 @@
-# Proyecto: Validación Avanzada de Formulario
+Proyecto: Validación Avanzada de Formulario
+Este proyecto corresponde a la actividad de la clase 3 del curso. En él trabajé en un formulario que sirve para recolectar datos como nombre, apellido, correo y contraseña,etc... pero lo importante es que los valida en tiempo real para que todo esté correcto antes de enviarlo.
 
-Este proyecto corresponde a la **actividad de la clase 3** del curso, y cumple con los lineamientos explicados por el profesor en las clases grabadas.
+ Descripción
+En este formulario se aplicaron varias validaciones avanzadas usando JavaScript. Además, todo el diseño lo hice con CSS externo y estructura HTML organizada. Me basé en lo que explicó el profesor en las clases y traté de usar todos los puntos que pidió. Por ejemplo:
 
-## 📝 Descripción
+Validación de los campos mientras el usuario escribe
 
-El formulario contiene validación avanzada de los campos usando **JavaScript**, estilos aplicados con **CSS externo** y estructura HTML semántica. Se aplicaron técnicas enseñadas por el profesor como:
+Mensajes claros cuando hay error o cuando algo está bien
 
-- Validación de campos en tiempo real
-- Mensajes de error y éxito
-- Indicador de progreso según validaciones correctas
-- Medidor de fortaleza de contraseña
-- Autoformato de teléfono
-- Confirmación de contraseña
-- Recuento dinámico de caracteres
-- Prevención de envío hasta validar todos los campos
-- Mostrado de resumen al enviar
+Una barra de progreso que sube a medida que llenas correctamente
 
-##  Conocimientos Aplicados
+Ver si la contraseña es segura (con símbolos, números y largo mínimo)
 
-Incluye los temas obligatorios que el profesor pidió aplicar en el ejercicio final:
+El teléfono se puede formatear solo (si se incluye)
 
-- ✔️ Uso de `label`, `placeholder`, `title`, `alt` para accesibilidad
-- ✔️ Uso de `form`, `input`, `textarea`, `select`, `button`
-- ✔️ Tipografía (`font-family`), colores (`color`, `background-color`)
-- ✔️ Estilos con archivo externo `.css`
-- ✔️ Estilos semánticos e inline contrastados
-- ✔️ Responsividad básica con `max-width` y `viewport`
-- ✔️ Validaciones avanzadas en JavaScript
-- ✔️ Comentarios claros en el código HTML, CSS y JS
-- ✔️ Código organizado y legible, sin duplicaciones innecesarias
+La confirmación de la contraseña verifica que ambas coincidan
 
-##  Estructura del Proyecto
+Un contador para ver cuántos caracteres llevas en ciertos campos
 
-```
-/actividad_clase3
-│
-├── index.html         → Contiene la estructura HTML y el JavaScript embebido
-└── css/
-    └── style.css      → Estilos externos según las buenas prácticas enseñadas
-```
+El botón de enviar solo se activa si todo está bien
 
-##  Notas Finales
+Cuando se envía, sale un resumen con los datos escritos
 
-- Este proyecto respeta la estructura de carpetas que el profesor pidió.
-- Todos los archivos están bien nombrados y organizados.
-- El formulario no permite enviar datos hasta que se completen y validen correctamente todos los campos.
-- El proyecto está listo para ser sustentado y explicado.
+ Qué aprendí
+A usar etiquetas como label, input, textarea, button, select de forma correcta
 
+Cómo hacer que los formularios sean más accesibles con placeholder, title, y alt
+
+Hacer validaciones en JavaScript y dar mensajes personalizados
+
+Que es importante organizar el código HTML, CSS y JS para no repetir cosas innecesarias
+
+A usar FormData para mostrar los datos en pantalla como resumen
+
+Usar addEventListener para que todo pase en tiempo real
+
+A manejar eventos como bloquear copiar y pegar en campos de seguridad
+
+ Lo que me gustó
+Me gustó porque pude ver cómo un formulario puede ser más interactivo, no solo que lo llenas y ya. También porque uno mismo puede controlar lo que pasa si el usuario se equivoca o no llena algo bien. Me gustó que se puede ver en pantalla si vas haciendo todo bien.
+
+ Lo que me costó un poco
+Al principio me costó un poco acordarme de los nombres de los elementos en el DOM, como por ejemplo usar bien el getElementById o addEventListener. También me enredé un poco con la lógica de la validación del password, sobre todo que cumpla con números, símbolos y mínimo de caracteres. Tuve que repasar un poco lo de expresiones regulares.
+
+Otro detalle que me costó fue que a veces el resumen no salía bien porque no estaba validando todos los campos antes de enviarlo, pero lo solucioné agregando el preventDefault() y organizando el orden del código.
